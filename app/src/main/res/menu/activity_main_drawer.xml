@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/picto_drawer_compte_vert"
+            android:title="Mon compte" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/picto_drawer_beepings_vert"
+            android:title="Mes Beepings" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/picto_drawer_notifications_vert"
+            android:title="Les notifications" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/picto_drawer_boutique_vert"
+            android:title="La boutique" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/picto_drawer_contact_vert"
+                android:title="Contactez-nous" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/btn_deconnexio_vert"
+                android:title="Se déconnecter" />
+        </menu>
+   </item>
+
+</menu>

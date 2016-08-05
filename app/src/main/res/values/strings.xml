@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Beeping_Android</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">815608775228886</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="country_prompt">Choose items from list</string>
+
+    <string-array name="country_arrays">
+        <item>India</item>
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+    </string-array>
+
+    <string name="contentMain1">Ajoutez un Beeping</string>
+    <string name="contentMain2">Posez votre Beeping AIR\nsur l\'ecran pour le synchroniser</string>
+    <string name="contentMainDialog1">Synchronisation</string>
+    <string name="contentMainDialog2">La Synchronisation Bluetooth\na echouee, voulez-vous reessayer?</string>
+    <string name="contentMainDialogYes">Oui</string>
+    <string name="contentMainDialogNo">Non</string>
+
+    <string name="contentSnackbar1">Wait while attempting to connect</string>
+    <string name="contentSnackbar2">Failed to pair</string>
+
+    <string name="contentContinue1">Votre Beepings AIR\na bien été détecté</string>
+    <string name="contentContinue2">Continuer</string>
+
+    <string name="contentSignalNear">Arreter la sonnerie</string>
+    <string name="contentSignalFar">Faire sonner</string>
+    <string name="contentSignalNearBottom">Trés proche</string>
+    <string name="contentSignalFarBottom">Eloigné</string>
+    <string name="contentSignalBatteryLow">Low</string>
+    <string name="contentSignalBatteryExcellent">Excellent</string>
+    <string name="contentSignal1">Clés maison</string>
+    <string name="contentSignal2">Beeping connecté</string>
+    <string name="contentSignalExitDialog1">Device is gone</string>
+    <string name="contentSignalExitDialog2">Unfortunately, device is out of range.</string>
+    <string name="contentSignalExitDialogYes">Oui</string>
+
+    <string name="bonding">Bonding with the device&#8230;</string>
+    <string name="bonded">The device is now bonded.</string>
+
+    <string name="password_yes">Oui</string>
+    <string name="password_no">No</string>
+
+</resources>

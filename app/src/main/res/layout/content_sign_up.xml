@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/visuel_fond_drawer"
+    android:orientation="vertical"
+    android:padding="15dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bp_android.prium.beeping_android.SignUpActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="3dp"
+        android:text="Welcome"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edit_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView"
+        android:layout_margin="4dp"
+        android:hint="First Name"
+        android:background="@drawable/rounded_rectangle" />
+
+    <EditText
+        android:id="@+id/edit_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView"
+        android:layout_margin="4dp"
+        android:hint="Last name"
+        android:background="@drawable/rounded_rectangle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/edit_text3"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView"
+            android:hint="Birth date"
+            android:background="@drawable/rounded_rectangle"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_toRightOf="@+id/editText"
+            android:cropToPadding="true"
+            android:src="@drawable/btn_calendrier_blanc"
+            android:background="@drawable/rounded_rectangle_sky"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView"
+        android:layout_margin="4dp"
+        android:hint="Mobile"
+        android:background="@drawable/rounded_rectangle" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edit_text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_below="@+id/textView"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_rectangle" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edit_text6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmation e-mail"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_below="@+id/textView"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_rectangle" />
+
+    <EditText
+        android:id="@+id/edit_text7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView"
+        android:layout_margin="4dp"
+        android:hint="Password"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_rectangle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="3dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <CheckBox
+            android:id="@+id/checkBoxDeafult1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="J’accepte les"
+            android:checked="true"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textForgotPass1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="conditions d’utilisation"
+            android:textSize = "14sp"
+            android:textColor="#ffffff"
+            android:textStyle="normal"
+            android:onClick="true"
+            android:layout_marginLeft="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/checkBoxDeafult1" />
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:id="@+id/view2"
+            android:layout_alignLeft="@+id/textForgotPass1"
+            android:layout_alignStart="@+id/textForgotPass1"
+            android:layout_below="@+id/textForgotPass1"
+            android:layout_alignRight="@+id/textForgotPass1"
+            android:layout_alignEnd="@+id/textForgotPass1" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/email_sign_up_button"
+        style="?android:textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/rounded_rectangle_sky"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textStyle="normal" />
+
+</LinearLayout>

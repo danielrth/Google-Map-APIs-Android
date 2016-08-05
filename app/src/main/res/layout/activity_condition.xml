@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/visuel_fond_drawer"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:text="Conditions d’utilisation"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@drawable/rounded_rectangle"
+        android:scrollbars="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="0.50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To make sure we know exactly what to expect from each other, Pooler has written down under which conditions it offers its service.
+These Terms of Service (terms)
+govern your access to and use of
+the services, including our various
+websites, email notifications,
+applications, buttons, and
+widgets, (the services or
+“Pooler”), and any information,
+text, graphics, photos or other
+  materials uploaded, downloaded
+ Mot de passe
+or appearing on the Services
+(collectively referred to as Content). Your access to a
+To make sure we know exactly what to expect from each other, Pooler has written down under which conditions it offers its service."
+            android:textSize="15sp"
+            android:textStyle="normal" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_rectangle_sky"
+        android:drawableTop="@drawable/btn_retour"
+        android:textColor="#ffffff"
+        android:textStyle="normal" />
+
+</LinearLayout>

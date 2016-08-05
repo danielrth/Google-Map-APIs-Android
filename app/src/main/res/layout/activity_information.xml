@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_menu"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/close_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/btn_fermer_page_info" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/picto_infos_petit"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/main_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Clés maison"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/light" />
+
+        <TextView
+            android:id="@+id/name_beeping_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Beepings AIR"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/light" />
+
+        <TextView
+            android:id="@+id/referene_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Ref. n° 6464688LM65K"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/light" />
+
+        <TextView
+            android:id="@+id/activeDate_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Activé le 18/02/2016"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/light" />
+
+    </LinearLayout>
+</RelativeLayout>

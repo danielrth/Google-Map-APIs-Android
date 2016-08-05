@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/color_menu">
+
+
+    <ImageButton
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/picto_ok_blanc"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre Beepings AIR a bien été détecté"
+        android:id="@+id/main_txt"
+        android:textColor="@color/light"
+        android:layout_margin="5dp"
+        android:textStyle="bold|normal"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rectangle_white"
+        android:text="CONTINUER"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/color_menu"
+        android:textStyle="bold|normal"/>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/contact_image_back"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/portrait" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_text1_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView"
+            android:layout_margin="3dp"
+            android:hint="Sujet" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_text2_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView"
+            android:layout_margin="3dp"
+            android:hint="Votre message"
+            android:layout_weight="0.75" />
+
+        <Button
+            android:id="@+id/edit_btn_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_rectangle_sky"
+            android:text="Envoyer"
+            android:textStyle="bold|normal"
+            android:textColor="@color/light"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

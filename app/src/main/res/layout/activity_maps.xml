@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context="com.bp_android.prium.beeping_android.fragments.BeepingAIRactivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.bp_android.prium.beeping_android.MapsActivity" />
+
+    <FrameLayout
+        android:id="@+id/map_cover_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="right">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/nav_effacer_adresse"
+                android:onClick="onButtonCancelClick"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/circle_end_marker"
+            android:layout_marginTop="200dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circle_end_marker"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/circle_center_marker"
+            android:layout_marginTop="200dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/circle_center_white_marker"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/tvRadius"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@drawable/radius_back_roundrect"
+            android:layout_marginTop="100dp"
+            android:text="0 km"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#80000000"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/nav_retour_vert"
+
+                android:onClick="onButtonBackClick"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="200dp"
+                    android:background="@drawable/nav_rechercher_adresse"
+                    android:layout_gravity="center_vertical|right"
+                    android:onClick="onSearchButtonClick"/>
+
+                <EditText
+                    android:id="@+id/search_place"
+                    android:descendantFocusability="beforeDescendants"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:imeOptions="actionSearch"
+                    android:textCursorDrawable="@null"/>
+
+            </FrameLayout>
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/nav_valid_vert"
+                android:onClick="onButtonSendClick"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listviewPlaces"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white">
+
+        </ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+            <Button
+                android:id="@+id/button_free_shape"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/draw_freeshape_button_selector"
+                android:onClick="onButtonDrawFreeShapeClick"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/button_circle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/draw_circle_button_selector"
+                android:onClick="onButtonDrawCircleClick"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+

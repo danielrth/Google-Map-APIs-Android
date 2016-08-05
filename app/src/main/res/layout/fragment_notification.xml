@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_menu"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lin_notif1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Me tenir informer des mise à jour."
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/light"
+            android:textStyle="normal" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:theme="@style/SwitchCompatTheme"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/lin_notif2"
+        android:layout_marginTop="5dp"
+        android:background="@color/black_overlay" />
+
+    <LinearLayout
+        android:id="@+id/lin_notif2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_below="@+id/lin_notif1"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Recevoir des offres de Beepings."
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/light"
+            android:textStyle="normal" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:theme="@style/SwitchCompatTheme"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

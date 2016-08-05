@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_menu</item>
+        <item name="colorPrimaryDark">@color/color_menu</item>
+        <item name="colorAccent">@color/color_menu</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/drawer_item</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/color_menu</item>
+        <item name="colorPrimaryDark">@color/color_menu</item>
+        <item name="colorAccent">@color/color_menu</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:actionButtonStyle">@style/OverFlow1</item>
+    </style>
+
+    <style name="OverFlow1" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:src">@drawable/nav_drawer_vert</item>
+    </style>
+
+    <style name="ThemeToolbar" parent="Theme.AppCompat.Light">
+
+        <!-- navigation icon color -->
+        <item name="colorControlNormal">@color/color_menu</item>
+
+        <!-- color of the menu overflow icon -->
+        <item name="android:textColorSecondary">@color/color_menu</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="SwitchCompatTheme" parent="Theme.AppCompat.Light.NoActionBar">\
+        <item name="colorControlActivated">@color/a</item>
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="android:colorForeground">#ffffff</item>
+    </style>
+
+    <style name="CustomToolBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="InvitationDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/color_menu</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+</resources>

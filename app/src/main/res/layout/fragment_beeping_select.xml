@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/air_zen_android"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/linear_layout_AIR"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <View
+            android:id="@+id/circles_air_white"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_device_select" />
+
+        <View
+            android:id="@+id/circles_air_grey"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_deive_released" />
+
+    <TextView
+        android:id="@+id/text_air"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="AIR"
+        android:onClick="true"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/grey"
+        android:textStyle="bold|normal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear_layout_ZEN"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <View
+            android:id="@+id/circles_zen_white"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_device_select" />
+
+        <View
+            android:id="@+id/circles_zen_grey"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_deive_released" />
+
+        <TextView
+            android:id="@+id/text_zen"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="ZEN"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/grey"
+            android:textStyle="bold|normal"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/circles_zen_grey"
+            android:layout_alignStart="@+id/circles_zen_grey"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeToolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <ImageView
+            android:id="@+id/imageView_account_back"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@+id/toolbar"
+            android:scaleType="fitXY"
+            android:src="@color/black_transparent" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/circle_camera">
+
+            <ImageButton
+                android:id="@+id/camera_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_photo_modif" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/relativeLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:weightSum="1">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_text1_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView"
+                    android:layout_margin="3dp"
+                    android:hint="Nom"
+                    android:shadowColor="@color/black_overlay"
+                    android:textColor="@color/black_overlay" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_text2_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView"
+                    android:layout_margin="3dp"
+                    android:hint="Prénom"
+                    android:shadowColor="@color/black_overlay"
+                    android:textColor="@color/black_overlay" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edit_text3_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView"
+                        android:layout_weight="1"
+                        android:hint="Date de naissance"
+                        android:shadowColor="@color/black_overlay"
+                        android:textColor="@color/black_overlay" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton1_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_calendrier_gris"
+                        android:scaleType="fitXY" />
+
+                </LinearLayout>
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_text4_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView"
+                    android:layout_margin="3dp"
+                    android:hint="Téléphone"
+                    android:shadowColor="@color/black_overlay"
+                    android:textColor="@color/black_overlay" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_text5_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_margin="3dp"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:shadowColor="@color/black_overlay"
+                    android:singleLine="true"
+                    android:textColor="@color/black_overlay" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_text7_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView"
+                    android:layout_margin="3dp"
+                    android:hint="old mot de passe"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:shadowColor="@color/black_overlay"
+                    android:textColor="@color/black_overlay" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_text8_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView"
+                    android:layout_margin="3dp"
+                    android:hint="Nouveau mot de passe"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:shadowColor="@color/black_overlay"
+                    android:textColor="@color/black_overlay" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</ScrollView>
