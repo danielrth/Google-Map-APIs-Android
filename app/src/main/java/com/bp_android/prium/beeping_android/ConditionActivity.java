@@ -19,6 +19,7 @@ public class ConditionActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent back = new Intent(ConditionActivity.this, SignUpActivity.class);
                 startActivity(back);
+                //sdlfkjslf
             }
         });
     }
